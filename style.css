@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right,rgb(236, 122, 122),rgb(95, 247, 95));
+   
+    
+}
+h1{
+    text-align: center;
+    font-size: 14vw;
+    font-family: "Protest Revolution", sans-serif;
+    color: #ef0e03;
+    position: relative;   
+    
+}
+h1::before{
+   content: "ASHISH SINGH";
+   position: absolute;
+   color: #00ffff;
+   border-right: 5px solid #f7d705;
+   overflow: hidden;
+   text-wrap: nowrap;
+   animation: animate 3s linear infinite ;
+}
+@keyframes animate {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0;
+    }
+}
